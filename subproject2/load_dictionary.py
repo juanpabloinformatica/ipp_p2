@@ -11,7 +11,6 @@ def dictionary2list(
         with open(filepath + ext, "r") as file:
             words = file.read().strip().split("\n")
             words = [word.lower() for word in words]
-        print(words)
     except FileNotFoundError as fnf:
         print(f"error: {fnf.strerror}")
 
